@@ -1,10 +1,20 @@
 import streamlit as st
 
+############## page setup #########
+
+st.set_page_config(
+    layout="wide", 
+    page_icon="📈", 
+    page_title="Current Market",
+    initial_sidebar_state="expanded"
+)
+
+############## body ###############
+
 st.title("Current Market")
 
 
 
-import streamlit as st
 
 # Assuming your image is saved as 'example.png' in the same directory as your script
 st.image("current.png", caption="My Local PNG Image", use_column_width=True)

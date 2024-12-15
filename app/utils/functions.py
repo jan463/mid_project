@@ -230,21 +230,19 @@ def run_xgb(df4, df4_training):
         scaler = MinMaxScaler()
         X_scaled = scaler.fit_transform(X)
         pred_xgb = xgbr.predict(X_scaled)
-        test = xg_df[["close", "company"]]
+        test = xg_df[["company", "close"]]
         test["prediction"] = pred_xgb
         test["gain_predicted"] = (test["prediction"] - test["close"]) / test["close"] * 100
         test.sort_values(by="gain_predicted", ascending=False, inplace=True)
-        #gain = test.head(10)["gain_real"].mean()
+        test.reset_index(inplace=True)
+        test.drop(columns="date", inplace=True)
+        test.set_index("company", inplace=True)
 
         return test
-
-    # import data
-    #df4 = pd.read_csv("ml1.csv")
-    #df4_training = pd.read_csv("ml1_training.csv")
 
     
 
     xgbr = XGB_train_real()
     stocks = get_stocks()
     stocks.to_csv("top_20.csv")
-    return stocks.head(20)
+    return stocks
