@@ -2,7 +2,7 @@ import os
 import zipfile
 import subprocess
 import pandas as pd
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime
 import xgboost as xgb
 from sklearn.preprocessing import MinMaxScaler
 import warnings
@@ -103,7 +103,7 @@ def create_ML1_df(df):
     df3.reset_index(inplace=True)
     df3.set_index("date", inplace=True)
 
-    #df3.to_csv("ml1.csv")
+    df3.to_csv("ml1.csv")
     return df3
 
 
@@ -244,5 +244,26 @@ def run_xgb(df4, df4_training):
 
     xgbr = XGB_train_real()
     stocks = get_stocks()
-    stocks.to_csv("top_20.csv")
+    #stocks.to_csv("top_20.csv")
     return stocks
+
+
+
+def plot_data(df, top):
+    df["date"] = pd.to_datetime(df["date"])
+    df.set_index("date", inplace=True)
+    df.sort_index(inplace=True)
+    df2 = df.loc["2020":]
+    df3 = df2.drop(columns=["ma_60", "rsi", "macd", "volume", "dividends", "stock_splits", "marketcap", "gain_14", "loss_14", "rsi_14", "ema_12", "ema_26", "rsi_lag_5", "rsi_lag_10"])
+    df3.reset_index(inplace=True)
+
+    future = datetime.today().date() + timedelta(days=30)
+    top["date"] = pd.to_datetime(future)
+
+    top.drop(columns=["close", "gain_predicted"], inplace=True)
+    top.rename(columns={"prediction": "close"}, inplace=True)
+
+    merged = pd.concat([df3, top], ignore_index=True)
+    merged.sort_values(by="date", inplace=True)
+
+    return merged
