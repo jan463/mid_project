@@ -1,0 +1,2228 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <Layers />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+    <color-palette custom='true' name='Stocks - Red-Green Diverging' type='ordered-diverging'>
+      <color>#f63538</color>
+      <color>#bf4045</color>
+      <color>#8b444e</color>
+      <color>#414554</color>
+      <color>#35764e</color>
+      <color>#2f9e4f</color>
+      <color>#30cc5a</color>
+    </color-palette>
+  </preferences>
+  <datasources>
+    <datasource caption='master2' inline='true' name='federated.11vn7gb1gkllei175dclg0xlwjqk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='master2' name='textscan.1wyuv0f0d5ktzp12dpnzj0jsrszo'>
+            <connection class='textscan' directory='/Users/jangfeller/Library/Mobile Documents/com~apple~CloudDocs/_Ironhack/projects/mid_project' filename='master2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1wyuv0f0d5ktzp12dpnzj0jsrszo' name='master2.csv' table='[master2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_CH' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='real' name='open' ordinal='2' />
+            <column datatype='real' name='high' ordinal='3' />
+            <column datatype='real' name='low' ordinal='4' />
+            <column datatype='real' name='close' ordinal='5' />
+            <column datatype='integer' name='volume' ordinal='6' />
+            <column datatype='real' name='dividends' ordinal='7' />
+            <column datatype='real' name='stock_splits' ordinal='8' />
+            <column datatype='string' name='company' ordinal='9' />
+            <column datatype='real' name='norm_price' ordinal='10' />
+            <column datatype='string' name='sector' ordinal='11' />
+            <column datatype='string' name='subsector' ordinal='12' />
+            <column datatype='real' name='marketcap' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;CHF&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_CH&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;’&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_628EEA4B34AE4CD0A921ABE589B33D0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_628EEA4B34AE4CD0A921ABE589B33D0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[open]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>open</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_628EEA4B34AE4CD0A921ABE589B33D0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>high</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[high]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>high</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_628EEA4B34AE4CD0A921ABE589B33D0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>low</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[low]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>low</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_628EEA4B34AE4CD0A921ABE589B33D0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>close</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[close]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>close</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_628EEA4B34AE4CD0A921ABE589B33D0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volume</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[volume]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>volume</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_628EEA4B34AE4CD0A921ABE589B33D0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dividends</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dividends]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>dividends</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_628EEA4B34AE4CD0A921ABE589B33D0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stock_splits</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[stock_splits]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>stock_splits</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_628EEA4B34AE4CD0A921ABE589B33D0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[company]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>company</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[master2.csv_628EEA4B34AE4CD0A921ABE589B33D0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>norm_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[norm_price]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>norm_price</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_628EEA4B34AE4CD0A921ABE589B33D0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sector</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sector]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>sector</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[master2.csv_628EEA4B34AE4CD0A921ABE589B33D0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subsector</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[subsector]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>subsector</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[master2.csv_628EEA4B34AE4CD0A921ABE589B33D0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marketcap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[marketcap]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>marketcap</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_628EEA4B34AE4CD0A921ABE589B33D0A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='master2.csv' datatype='table' name='[__tableau_internal_object_id__].[master2.csv_628EEA4B34AE4CD0A921ABE589B33D0A]' role='measure' type='quantitative' />
+      <column caption='Close' datatype='real' name='[close]' role='measure' type='quantitative' />
+      <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Dividends' datatype='real' name='[dividends]' role='measure' type='quantitative' />
+      <column caption='High' datatype='real' name='[high]' role='measure' type='quantitative' />
+      <column caption='Low' datatype='real' name='[low]' role='measure' type='quantitative' />
+      <column caption='Marketcap' datatype='real' name='[marketcap]' role='measure' type='quantitative' />
+      <column caption='Norm Price' datatype='real' name='[norm_price]' role='measure' type='quantitative' />
+      <column caption='Open' datatype='real' name='[open]' role='measure' type='quantitative' />
+      <column caption='Sector' datatype='string' name='[sector]' role='dimension' type='nominal' />
+      <column caption='Stock Splits' datatype='real' name='[stock_splits]' role='measure' type='quantitative' />
+      <column caption='Subsector' datatype='string' name='[subsector]' role='dimension' type='nominal' />
+      <column caption='Volume' datatype='integer' name='[volume]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='Data/tableau-temp/#TableauTemp_0ixul5t048ugxr17qjgv01kjd22k.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/05/2024 07:32:59 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>master2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1774874</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>master2.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>13689</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>open</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[open]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>open</remote-alias>
+              <ordinal>2</ordinal>
+              <family>master2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1310990</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>high</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[high]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>high</remote-alias>
+              <ordinal>3</ordinal>
+              <family>master2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1375822</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>low</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[low]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>low</remote-alias>
+              <ordinal>4</ordinal>
+              <family>master2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1440759</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>close</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[close]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>close</remote-alias>
+              <ordinal>5</ordinal>
+              <family>master2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1440759</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>volume</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[volume]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>volume</remote-alias>
+              <ordinal>6</ordinal>
+              <family>master2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>333167</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dividends</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[dividends]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dividends</remote-alias>
+              <ordinal>7</ordinal>
+              <family>master2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4129</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stock_splits</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[stock_splits]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stock_splits</remote-alias>
+              <ordinal>8</ordinal>
+              <family>master2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>171</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>company</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[company]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>company</remote-alias>
+              <ordinal>9</ordinal>
+              <family>master2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>522</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>norm_price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[norm_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>norm_price</remote-alias>
+              <ordinal>10</ordinal>
+              <family>master2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1720894</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sector</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sector]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sector</remote-alias>
+              <ordinal>11</ordinal>
+              <family>master2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subsector</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[subsector]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>subsector</remote-alias>
+              <ordinal>12</ordinal>
+              <family>master2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>137</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>marketcap</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[marketcap]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>marketcap</remote-alias>
+              <ordinal>13</ordinal>
+              <family>master2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>515</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Switzerland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='master2.csv' id='master2.csv_628EEA4B34AE4CD0A921ABE589B33D0A'>
+            <properties context=''>
+              <relation connection='textscan.1wyuv0f0d5ktzp12dpnzj0jsrszo' name='master2.csv' table='[master2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_CH' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='date' name='date' ordinal='1' />
+                  <column datatype='real' name='open' ordinal='2' />
+                  <column datatype='real' name='high' ordinal='3' />
+                  <column datatype='real' name='low' ordinal='4' />
+                  <column datatype='real' name='close' ordinal='5' />
+                  <column datatype='integer' name='volume' ordinal='6' />
+                  <column datatype='real' name='dividends' ordinal='7' />
+                  <column datatype='real' name='stock_splits' ordinal='8' />
+                  <column datatype='string' name='company' ordinal='9' />
+                  <column datatype='real' name='norm_price' ordinal='10' />
+                  <column datatype='string' name='sector' ordinal='11' />
+                  <column datatype='string' name='subsector' ordinal='12' />
+                  <column datatype='real' name='marketcap' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='df_2010_sector' inline='true' name='federated.056uhre03erh9x15icgnx0de28pv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='df_2010_sector' name='textscan.0fpd2op1qi8svt1684pus0ucgdl3'>
+            <connection class='textscan' directory='/Users/jangfeller/Library/Mobile Documents/com~apple~CloudDocs/_Ironhack/projects/mid_project' filename='df_2010_sector.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0fpd2op1qi8svt1684pus0ucgdl3' name='master2.csv' table='[master2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_CH' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='real' name='open' ordinal='2' />
+            <column datatype='real' name='high' ordinal='3' />
+            <column datatype='real' name='low' ordinal='4' />
+            <column datatype='real' name='close' ordinal='5' />
+            <column datatype='integer' name='volume' ordinal='6' />
+            <column datatype='real' name='dividends' ordinal='7' />
+            <column datatype='real' name='stock_splits' ordinal='8' />
+            <column datatype='string' name='company' ordinal='9' />
+            <column datatype='real' name='norm_price' ordinal='10' />
+            <column datatype='string' name='sector' ordinal='11' />
+            <column datatype='string' name='subsector' ordinal='12' />
+            <column datatype='real' name='marketcap' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;CHF&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_CH&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;’&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[open]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>open</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>high</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[high]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>high</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>low</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[low]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>low</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>close</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[close]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>close</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volume</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[volume]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>volume</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dividends</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dividends]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>dividends</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stock_splits</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[stock_splits]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>stock_splits</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[company]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>company</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>norm_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[norm_price]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>norm_price</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sector</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sector]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>sector</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subsector</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[subsector]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>subsector</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marketcap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[marketcap]</local-name>
+            <parent-name>[master2.csv]</parent-name>
+            <remote-alias>marketcap</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Calculation1' datatype='real' name='[Calculation_2072641012994355200]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[close]-[open]' />
+      </column>
+      <column caption='percentage_change' datatype='real' name='[Calculation_2072641012995547137]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(SUM([norm_price]) - LOOKUP(SUM([norm_price]), -1)) / ABS(LOOKUP(SUM([norm_price]), -1))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='INDEX()' datatype='integer' name='[Calculation_2271291977835786244]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INDEX()'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='index' datatype='integer' name='[Calculation_2271291977837010951]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INDEX()'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Center' datatype='spatial' name='[Calculation_2414492372271222787]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='MAKEPOINT(0, 0)' />
+      </column>
+      <column caption='master2.csv' datatype='table' name='[__tableau_internal_object_id__].[master2.csv_27B1E9A5439E45CE8A6315269F51F323]' role='measure' type='quantitative' />
+      <column caption='Close' datatype='real' name='[close]' role='measure' type='quantitative' />
+      <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Dividends' datatype='real' name='[dividends]' role='measure' type='quantitative' />
+      <column caption='High' datatype='real' name='[high]' role='measure' type='quantitative' />
+      <column caption='Low' datatype='real' name='[low]' role='measure' type='quantitative' />
+      <column caption='Marketcap' datatype='real' name='[marketcap]' role='measure' type='quantitative' />
+      <column caption='Norm Price' datatype='real' name='[norm_price]' role='measure' type='quantitative' />
+      <column caption='Open' datatype='real' name='[open]' role='measure' type='quantitative' />
+      <column caption='percentage_change (copy)' datatype='real' name='[percentage_change (copy)_2271291977838698504]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(SUM([norm_price]) - LOOKUP(SUM([norm_price]), -1)) / ABS(LOOKUP(SUM([norm_price]), -1))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Sector' datatype='string' name='[sector]' role='dimension' type='nominal' />
+      <column caption='Stock Splits' datatype='real' name='[stock_splits]' role='measure' type='quantitative' />
+      <column caption='Subsector' datatype='string' name='[subsector]' role='dimension' type='nominal' />
+      <column caption='Volume' datatype='integer' name='[volume]' role='measure' type='quantitative' />
+      <column-instance column='[sector]' derivation='None' name='[none:sector:nk]' pivot='key' type='nominal' />
+      <group caption='last 2' name='[last 2]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='2' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='MAX([date])' function='order' user:ui-marker='order'>
+            <groupfilter function='level-members' level='[date]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <group caption='last two days' name='[last two days]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='2' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='MAX([date])' function='order' user:ui-marker='order'>
+            <groupfilter function='level-members' level='[date]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='Sector'>
+          <field>[sector]</field>
+          <field>[subsector]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='Data/tableau-temp/#TableauTemp_16ifk290c9p5qv13msjq20ini544.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/05/2024 07:33:23 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>master2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1774874</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>master2.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>13619</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>open</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[open]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>open</remote-alias>
+              <ordinal>2</ordinal>
+              <family>master2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1279024</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>high</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[high]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>high</remote-alias>
+              <ordinal>3</ordinal>
+              <family>master2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1494661</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>low</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[low]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>low</remote-alias>
+              <ordinal>4</ordinal>
+              <family>master2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1440759</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>close</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[close]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>close</remote-alias>
+              <ordinal>5</ordinal>
+              <family>master2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1408049</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>volume</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[volume]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>volume</remote-alias>
+              <ordinal>6</ordinal>
+              <family>master2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>339695</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dividends</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[dividends]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dividends</remote-alias>
+              <ordinal>7</ordinal>
+              <family>master2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4776</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stock_splits</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[stock_splits]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stock_splits</remote-alias>
+              <ordinal>8</ordinal>
+              <family>master2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>company</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[company]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>company</remote-alias>
+              <ordinal>9</ordinal>
+              <family>master2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>548</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>norm_price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[norm_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>norm_price</remote-alias>
+              <ordinal>10</ordinal>
+              <family>master2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1720997</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sector</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sector]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sector</remote-alias>
+              <ordinal>11</ordinal>
+              <family>master2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subsector</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[subsector]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>subsector</remote-alias>
+              <ordinal>12</ordinal>
+              <family>master2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>137</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>marketcap</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[marketcap]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>marketcap</remote-alias>
+              <ordinal>13</ordinal>
+              <family>master2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>541</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[master2.csv_27B1E9A5439E45CE8A6315269F51F323]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:sector:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;financials&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;materials&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;communication services&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;industrials&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;real estate&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;consumer discretionary&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;health care&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;utilities&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;information technology&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;consumer staples&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;energy&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Switzerland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='master2.csv' id='master2.csv_27B1E9A5439E45CE8A6315269F51F323'>
+            <properties context=''>
+              <relation connection='textscan.0fpd2op1qi8svt1684pus0ucgdl3' name='master2.csv' table='[master2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_CH' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='date' name='date' ordinal='1' />
+                  <column datatype='real' name='open' ordinal='2' />
+                  <column datatype='real' name='high' ordinal='3' />
+                  <column datatype='real' name='low' ordinal='4' />
+                  <column datatype='real' name='close' ordinal='5' />
+                  <column datatype='integer' name='volume' ordinal='6' />
+                  <column datatype='real' name='dividends' ordinal='7' />
+                  <column datatype='real' name='stock_splits' ordinal='8' />
+                  <column datatype='string' name='company' ordinal='9' />
+                  <column datatype='real' name='norm_price' ordinal='10' />
+                  <column datatype='string' name='sector' ordinal='11' />
+                  <column datatype='string' name='subsector' ordinal='12' />
+                  <column datatype='real' name='marketcap' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='BG'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_2010_sector' name='federated.056uhre03erh9x15icgnx0de28pv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.056uhre03erh9x15icgnx0de28pv'>
+            <column caption='INDEX()' datatype='integer' name='[Calculation_2271291977835786244]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INDEX()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='IF RANK(SUM([Marketcap]))=1 THEN MAX([Sector]) END' datatype='string' name='[Calculation_2414492372268695553]' role='measure' type='nominal' user:unnamed='BG'>
+              <calculation class='tableau' formula='IF RANK(SUM([marketcap]))=1 THEN MAX([sector]) END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[last two days]' derivation='InOut' name='[io:last two days:nk]' pivot='key' type='nominal' />
+            <column caption='Marketcap' datatype='real' name='[marketcap]' role='measure' type='quantitative' />
+            <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sector]' derivation='None' name='[none:sector:nk]' pivot='key' type='nominal' />
+            <column caption='Sector' datatype='string' name='[sector]' role='dimension' type='nominal' />
+            <column-instance column='[marketcap]' derivation='Sum' name='[sum:marketcap:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2271291977835786244]' derivation='User' name='[usr:Calculation_2271291977835786244:ok:2]' pivot='key' type='ordinal'>
+              <table-calc level-address='[federated.056uhre03erh9x15icgnx0de28pv].[none:date:ok]' ordering-field='[federated.056uhre03erh9x15icgnx0de28pv].[date]' ordering-type='Field' />
+            </column-instance>
+            <column-instance column='[Calculation_2414492372268695553]' derivation='User' name='[usr:Calculation_2414492372268695553:nk:3]' pivot='key' type='nominal'>
+              <table-calc ordering-type='Field'>
+                <order field='[federated.056uhre03erh9x15icgnx0de28pv].[company]' />
+                <order field='[federated.056uhre03erh9x15icgnx0de28pv].[date]' />
+              </table-calc>
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.056uhre03erh9x15icgnx0de28pv].[io:last two days:nk]'>
+            <groupfilter function='member' level='[io:last two days:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.056uhre03erh9x15icgnx0de28pv].[usr:Calculation_2271291977835786244:ok:2]'>
+            <groupfilter function='member' level='[usr:Calculation_2271291977835786244:ok:2]' member='2' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.056uhre03erh9x15icgnx0de28pv].[io:last two days:nk]</column>
+            <column>[federated.056uhre03erh9x15icgnx0de28pv].[usr:Calculation_2271291977835786244:ok:2]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.056uhre03erh9x15icgnx0de28pv].[usr:Calculation_2414492372268695553:nk:3]' />
+              <lod column='[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]' />
+              <size column='[federated.056uhre03erh9x15icgnx0de28pv].[sum:marketcap:qk]' />
+              <lod column='[federated.056uhre03erh9x15icgnx0de28pv].[none:date:qk]' />
+              <lod column='[federated.056uhre03erh9x15icgnx0de28pv].[none:company:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='11'>&lt;</run>
+                <run bold='true' fontsize='11'>[federated.056uhre03erh9x15icgnx0de28pv].[usr:Calculation_2414492372268695553:nk:3]</run>
+                <run bold='true' fontsize='11'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-color' value='#555555' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{114711F4-2063-4807-B743-0431F90973E6}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='master2' name='federated.11vn7gb1gkllei175dclg0xlwjqk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11vn7gb1gkllei175dclg0xlwjqk'>
+            <column caption='Close' datatype='real' name='[close]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[sector]' derivation='None' name='[none:sector:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subsector]' derivation='None' name='[none:subsector:nk]' pivot='key' type='nominal' />
+            <column-instance column='[close]' derivation='Sum' name='[pcdf:sum:close:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Columns' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column caption='Sector' datatype='string' name='[sector]' role='dimension' type='nominal' />
+            <column caption='Subsector' datatype='string' name='[subsector]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.11vn7gb1gkllei175dclg0xlwjqk].[tmn:date:qk]' included-values='in-range' />
+          <filter class='categorical' column='[federated.11vn7gb1gkllei175dclg0xlwjqk].[yr:date:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:date:ok]' member='2021' />
+              <groupfilter function='member' level='[yr:date:ok]' member='2022' />
+              <groupfilter function='member' level='[yr:date:ok]' member='2023' />
+              <groupfilter function='member' level='[yr:date:ok]' member='2024' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.11vn7gb1gkllei175dclg0xlwjqk].[yr:date:ok]</column>
+            <column>[federated.11vn7gb1gkllei175dclg0xlwjqk].[tmn:date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.11vn7gb1gkllei175dclg0xlwjqk].[none:subsector:nk]' value='272' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.11vn7gb1gkllei175dclg0xlwjqk].[pcdf:sum:close:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9010497331619263' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.11vn7gb1gkllei175dclg0xlwjqk].[none:sector:nk] / [federated.11vn7gb1gkllei175dclg0xlwjqk].[none:subsector:nk])</rows>
+        <cols>[federated.11vn7gb1gkllei175dclg0xlwjqk].[tmn:date:qk]</cols>
+      </table>
+      <simple-id uuid='{0A0E0E72-5A8F-4AEE-BFD1-AC4E11DAB4EE}' />
+    </worksheet>
+    <worksheet name='Treemap'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_2010_sector' name='federated.056uhre03erh9x15icgnx0de28pv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.056uhre03erh9x15icgnx0de28pv'>
+            <column caption='INDEX()' datatype='integer' name='[Calculation_2271291977835786244]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INDEX()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Close' datatype='real' name='[close]' role='measure' type='quantitative' />
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[last two days]' derivation='InOut' name='[io:last two days:nk]' pivot='key' type='nominal' />
+            <column caption='Marketcap' datatype='real' name='[marketcap]' role='measure' type='quantitative' />
+            <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sector]' derivation='None' name='[none:sector:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subsector]' derivation='None' name='[none:subsector:nk]' pivot='key' type='nominal' />
+            <column-instance column='[close]' derivation='Sum' name='[pcdf:sum:close:qk:2]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-field='[federated.056uhre03erh9x15icgnx0de28pv].[date]' ordering-type='Field' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column caption='Sector' datatype='string' name='[sector]' role='dimension' type='nominal' />
+            <column caption='Subsector' datatype='string' name='[subsector]' role='dimension' type='nominal' />
+            <column-instance column='[marketcap]' derivation='Sum' name='[sum:marketcap:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2271291977835786244]' derivation='User' name='[usr:Calculation_2271291977835786244:ok:2]' pivot='key' type='ordinal'>
+              <table-calc level-address='[federated.056uhre03erh9x15icgnx0de28pv].[none:date:ok]' ordering-field='[federated.056uhre03erh9x15icgnx0de28pv].[date]' ordering-type='Field' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.056uhre03erh9x15icgnx0de28pv].[io:last two days:nk]'>
+            <groupfilter function='member' level='[io:last two days:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.056uhre03erh9x15icgnx0de28pv].[usr:Calculation_2271291977835786244:ok:2]'>
+            <groupfilter function='member' level='[usr:Calculation_2271291977835786244:ok:2]' member='2' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.056uhre03erh9x15icgnx0de28pv].[io:last two days:nk]</column>
+            <column>[federated.056uhre03erh9x15icgnx0de28pv].[usr:Calculation_2271291977835786244:ok:2]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.056uhre03erh9x15icgnx0de28pv].[pcdf:sum:close:qk:2]' value='*+0.00%;-0.00%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.056uhre03erh9x15icgnx0de28pv].[pcdf:sum:close:qk:2]' max='0.029999999999999999' min='-0.029999999999999999' palette='Stocks - Red-Green Diverging' symmetric='false' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]' />
+              <lod column='[federated.056uhre03erh9x15icgnx0de28pv].[none:subsector:nk]' />
+              <text column='[federated.056uhre03erh9x15icgnx0de28pv].[none:company:nk]' />
+              <text column='[federated.056uhre03erh9x15icgnx0de28pv].[pcdf:sum:close:qk:2]' />
+              <color column='[federated.056uhre03erh9x15icgnx0de28pv].[pcdf:sum:close:qk:2]' />
+              <size column='[federated.056uhre03erh9x15icgnx0de28pv].[sum:marketcap:qk]' />
+              <lod column='[federated.056uhre03erh9x15icgnx0de28pv].[none:date:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.056uhre03erh9x15icgnx0de28pv].[pcdf:sum:close:qk:2]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.056uhre03erh9x15icgnx0de28pv].[none:company:nk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='bottom' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#555555' />
+                <format attr='mark-transparency' value='193' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{746C188C-C081-4FCC-A35E-B9E8FF03769B}' />
+    </worksheet>
+    <worksheet name='boxplots volume'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_2010_sector' name='federated.056uhre03erh9x15icgnx0de28pv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.056uhre03erh9x15icgnx0de28pv'>
+            <column-instance column='[sector]' derivation='None' name='[none:sector:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subsector]' derivation='None' name='[none:subsector:nk]' pivot='key' type='nominal' />
+            <column caption='Sector' datatype='string' name='[sector]' role='dimension' type='nominal' />
+            <column caption='Subsector' datatype='string' name='[subsector]' role='dimension' type='nominal' />
+            <column-instance column='[volume]' derivation='Sum' name='[sum:volume:qk]' pivot='key' type='quantitative' />
+            <column caption='Volume' datatype='integer' name='[volume]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:sector:nk]' />
+              <groupfilter function='member' level='[none:sector:nk]' member='&quot;information technology&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]' />
+              <lod column='[federated.056uhre03erh9x15icgnx0de28pv].[none:subsector:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.056uhre03erh9x15icgnx0de28pv].[sum:volume:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.056uhre03erh9x15icgnx0de28pv].[sum:volume:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.056uhre03erh9x15icgnx0de28pv].[sum:volume:qk]</rows>
+        <cols>[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]</cols>
+      </table>
+      <simple-id uuid='{0353502B-5EF5-4F46-8E76-C310F90CE899}' />
+    </worksheet>
+    <worksheet name='dividends bar'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_2010_sector' name='federated.056uhre03erh9x15icgnx0de28pv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.056uhre03erh9x15icgnx0de28pv'>
+            <column caption='Dividends' datatype='real' name='[dividends]' role='measure' type='quantitative' />
+            <column-instance column='[sector]' derivation='None' name='[none:sector:nk]' pivot='key' type='nominal' />
+            <column caption='Sector' datatype='string' name='[sector]' role='dimension' type='nominal' />
+            <column-instance column='[dividends]' derivation='Sum' name='[sum:dividends:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.056uhre03erh9x15icgnx0de28pv].[sum:dividends:qk]</rows>
+        <cols>[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]</cols>
+      </table>
+      <simple-id uuid='{D817A194-2C2A-4A9B-B4D2-77B8E63A1190}' />
+    </worksheet>
+    <worksheet name='heat map daily change'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_2010_sector' name='federated.056uhre03erh9x15icgnx0de28pv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.056uhre03erh9x15icgnx0de28pv'>
+            <column caption='percentage_change' datatype='real' name='[Calculation_2072641012995547137]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(SUM([norm_price]) - LOOKUP(SUM([norm_price]), -1)) / ABS(LOOKUP(SUM([norm_price]), -1))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[sector]' derivation='None' name='[none:sector:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subsector]' derivation='None' name='[none:subsector:nk]' pivot='key' type='nominal' />
+            <column caption='Norm Price' datatype='real' name='[norm_price]' role='measure' type='quantitative' />
+            <column caption='Sector' datatype='string' name='[sector]' role='dimension' type='nominal' />
+            <column caption='Subsector' datatype='string' name='[subsector]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2072641012995547137]' derivation='User' name='[usr:Calculation_2072641012995547137:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]'>
+            <groupfilter function='level-members' level='[none:sector:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.056uhre03erh9x15icgnx0de28pv].[none:subsector:nk]'>
+            <groupfilter function='level-members' level='[none:subsector:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.056uhre03erh9x15icgnx0de28pv].[tmn:date:qk]' included-values='in-range'>
+            <min>#2021-03-09 00:00:00#</min>
+            <max>#2024-11-01 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.056uhre03erh9x15icgnx0de28pv].[tmn:date:qk]</column>
+            <column>[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]</column>
+            <column>[federated.056uhre03erh9x15icgnx0de28pv].[none:subsector:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='20' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.056uhre03erh9x15icgnx0de28pv].[usr:Calculation_2072641012995547137:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ee2000</color>
+                <color>#ec3215</color>
+                <color>#ea442a</color>
+                <color>#e8563f</color>
+                <color>#e66753</color>
+                <color>#e47867</color>
+                <color>#e2897b</color>
+                <color>#e0998e</color>
+                <color>#deaaa1</color>
+                <color>#dcbab4</color>
+                <color>#dac9c7</color>
+                <color>#d9d9d9</color>
+                <color>#bfd2c0</color>
+                <color>#a7cca8</color>
+                <color>#90c591</color>
+                <color>#7abf7c</color>
+                <color>#65b867</color>
+                <color>#51b254</color>
+                <color>#3fab42</color>
+                <color>#2da531</color>
+                <color>#1d9e21</color>
+                <color>#0e9812</color>
+                <color>#019205</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.056uhre03erh9x15icgnx0de28pv].[usr:Calculation_2072641012995547137:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7999999523162842' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk] / [federated.056uhre03erh9x15icgnx0de28pv].[none:subsector:nk])</rows>
+        <cols>[federated.056uhre03erh9x15icgnx0de28pv].[tmn:date:qk]</cols>
+      </table>
+      <simple-id uuid='{1CB1D840-13DF-44A3-A30F-FD0895F745FE}' />
+    </worksheet>
+    <worksheet name='sector_line'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_2010_sector' name='federated.056uhre03erh9x15icgnx0de28pv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.056uhre03erh9x15icgnx0de28pv'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[sector]' derivation='None' name='[none:sector:nk]' pivot='key' type='nominal' />
+            <column caption='Norm Price' datatype='real' name='[norm_price]' role='measure' type='quantitative' />
+            <column caption='Sector' datatype='string' name='[sector]' role='dimension' type='nominal' />
+            <column-instance column='[norm_price]' derivation='Sum' name='[sum:norm_price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.056uhre03erh9x15icgnx0de28pv].[sum:norm_price:qk]</rows>
+        <cols>[federated.056uhre03erh9x15icgnx0de28pv].[tmn:date:qk]</cols>
+      </table>
+      <simple-id uuid='{E8501538-4094-4624-B505-B4129F4A04FC}' />
+    </worksheet>
+    <worksheet name='stacked bar subsectors'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_2010_sector' name='federated.056uhre03erh9x15icgnx0de28pv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.056uhre03erh9x15icgnx0de28pv'>
+            <column-instance column='[sector]' derivation='None' name='[none:sector:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subsector]' derivation='None' name='[none:subsector:nk]' pivot='key' type='nominal' />
+            <column caption='Sector' datatype='string' name='[sector]' role='dimension' type='nominal' />
+            <column caption='Subsector' datatype='string' name='[subsector]' role='dimension' type='nominal' />
+            <column-instance column='[volume]' derivation='Sum' name='[sum:volume:qk]' pivot='key' type='quantitative' />
+            <column caption='Volume' datatype='integer' name='[volume]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.056uhre03erh9x15icgnx0de28pv].[none:subsector:nk]' />
+              <text column='[federated.056uhre03erh9x15icgnx0de28pv].[none:subsector:nk]' />
+              <lod column='[federated.056uhre03erh9x15icgnx0de28pv].[none:subsector:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='on' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.056uhre03erh9x15icgnx0de28pv].[sum:volume:qk]</rows>
+        <cols>[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]</cols>
+      </table>
+      <simple-id uuid='{F677234C-BB07-4396-9A6A-EA2713DC0BEB}' />
+    </worksheet>
+    <worksheet name='sunburst'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_2010_sector' name='federated.056uhre03erh9x15icgnx0de28pv' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.056uhre03erh9x15icgnx0de28pv'>
+            <column caption='Center' datatype='spatial' name='[Calculation_2414492372271222787]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='MAKEPOINT(0, 0)' />
+            </column>
+            <column-instance column='[Calculation_2414492372271222787]' derivation='Collect' name='[clct:Calculation_2414492372271222787:nk]' pivot='key' type='nominal' />
+            <column-instance column='[company]' derivation='Count' name='[cnt:company:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[subsector]' derivation='Count' name='[cnt:subsector:qk]' pivot='key' type='quantitative' />
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column-instance column='[sector]' derivation='None' name='[none:sector:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subsector]' derivation='None' name='[none:subsector:nk]' pivot='key' type='nominal' />
+            <column caption='Sector' datatype='string' name='[sector]' role='dimension' type='nominal' />
+            <column caption='Subsector' datatype='string' name='[subsector]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes customization-axis='layer'>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <lod column='[federated.056uhre03erh9x15icgnx0de28pv].[clct:Calculation_2414492372271222787:nk]' />
+            </encodings>
+          </pane>
+          <pane id='0' selection-relaxation-option='selection-relaxation-allow' title='Layer 3'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]' />
+              <color column='[federated.056uhre03erh9x15icgnx0de28pv].[none:subsector:nk]' />
+              <wedge-size column='[federated.056uhre03erh9x15icgnx0de28pv].[cnt:company:qk]' />
+              <lod column='[federated.056uhre03erh9x15icgnx0de28pv].[clct:Calculation_2414492372271222787:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7031491994857788' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' title='Layer 2'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]' />
+              <wedge-size column='[federated.056uhre03erh9x15icgnx0de28pv].[cnt:subsector:qk]' />
+              <lod column='[federated.056uhre03erh9x15icgnx0de28pv].[clct:Calculation_2414492372271222787:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.1754143238067627' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' title='Layer 1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <lod column='[federated.056uhre03erh9x15icgnx0de28pv].[clct:Calculation_2414492372271222787:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{68F6D9AF-D41F-4F4A-A705-53A3B4171895}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Treeboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#e6e6e6'>Current Market conditions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#333333' />
+        </style-rule>
+      </style>
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='11' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='97916' id='7' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+              <zone h='5469' id='8' type-v2='title' w='98828' x='586' y='1042'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='92447' id='5' type-v2='layout-basic' w='98828' x='586' y='6511' />
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='88542' id='3' name='BG' show-title='false' w='98463' x='805' y='10677' />
+        <zone h='88542' id='9' name='Treemap' show-title='false' w='98389' x='805' y='10677' />
+        <zone h='9896' id='13' name='Treemap' pane-specification-id='0' param='[federated.056uhre03erh9x15icgnx0de28pv].[pcdf:sum:close:qk:2]' type-v2='color' w='10249' x='62738' y='391' />
+        <zone h='6771' id='14' name='Treemap' param='[federated.056uhre03erh9x15icgnx0de28pv].[none:company:nk]' type-v2='highlighter' w='11713' x='74378' y='1823' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#e6e6e6'>Current Market conditions</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='36' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='35' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone h='5469' id='8' type-v2='title' w='98828' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='88542' id='3' is-fixed='true' name='BG' show-title='false' w='98463' x='805' y='10677'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6771' id='14' name='Treemap' param='[federated.056uhre03erh9x15icgnx0de28pv].[none:company:nk]' type-v2='highlighter' w='11713' x='74378' y='1823'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='88542' id='9' is-fixed='true' name='Treemap' show-title='false' w='98389' x='805' y='10677'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9896' id='13' name='Treemap' pane-specification-id='0' param='[federated.056uhre03erh9x15icgnx0de28pv].[pcdf:sum:close:qk:2]' type-v2='color' w='10249' x='62738' y='391'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0815AFEC-3DB5-4982-9E73-D5597C7CCEE4}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Treeboard (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#e6e6e6'>Current Market conditions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#333333' />
+        </style-rule>
+      </style>
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='df_2010_sector' name='federated.056uhre03erh9x15icgnx0de28pv' />
+      </datasources>
+      <datasource-dependencies datasource='federated.056uhre03erh9x15icgnx0de28pv'>
+        <column-instance column='[last two days]' derivation='InOut' name='[io:last two days:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='11' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='97916' id='7' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+              <zone h='5469' id='8' type-v2='title' w='98828' x='586' y='1042'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='92447' id='5' type-v2='layout-basic' w='98828' x='586' y='6511' />
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='11589' id='12' name='Treemap' param='[federated.056uhre03erh9x15icgnx0de28pv].[io:last two days:nk]' type-v2='filter' w='12299' x='87262' y='521' />
+        <zone h='88542' id='3' name='BG' show-title='false' w='98463' x='805' y='10677' />
+        <zone h='88542' id='9' name='Treemap' show-title='false' w='98389' x='805' y='10677' />
+        <zone h='9896' id='13' name='Treemap' pane-specification-id='0' param='[federated.056uhre03erh9x15icgnx0de28pv].[pcdf:sum:close:qk:2]' type-v2='color' w='10249' x='62738' y='391' />
+        <zone h='6771' id='14' name='Treemap' param='[federated.056uhre03erh9x15icgnx0de28pv].[none:company:nk]' type-v2='highlighter' w='11713' x='74378' y='1823' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#e6e6e6'>Current Market conditions</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='36' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='35' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone h='5469' id='8' type-v2='title' w='98828' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='88542' id='3' is-fixed='true' name='BG' show-title='false' w='98463' x='805' y='10677'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11589' id='12' mode='checkdropdown' name='Treemap' param='[federated.056uhre03erh9x15icgnx0de28pv].[io:last two days:nk]' type-v2='filter' w='12299' x='87262' y='521'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6771' id='14' name='Treemap' param='[federated.056uhre03erh9x15icgnx0de28pv].[none:company:nk]' type-v2='highlighter' w='11713' x='74378' y='1823'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='88542' id='9' is-fixed='true' name='Treemap' show-title='false' w='98389' x='805' y='10677'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9896' id='13' name='Treemap' pane-specification-id='0' param='[federated.056uhre03erh9x15icgnx0de28pv].[pcdf:sum:close:qk:2]' type-v2='color' w='10249' x='62738' y='391'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AACE1975-AC69-4F2B-A190-02BDEA9B1DFE}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='sector_line'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='185'>
+            <card pane-specification-id='0' param='[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6A28A05D-875B-4EFE-B5B2-CDCD857922B2}' />
+    </window>
+    <window class='worksheet' name='stacked bar subsectors'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.056uhre03erh9x15icgnx0de28pv].[none:subsector:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{142EFA7C-DC88-4CEB-A377-38408F3E9BEE}' />
+    </window>
+    <window class='worksheet' name='dividends bar'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{79E554EB-1029-4B64-A83B-63D312EA89D1}' />
+    </window>
+    <window class='worksheet' name='boxplots volume'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{A298FE15-75DC-42E8-8A86-6B71FE60E673}' />
+    </window>
+    <window class='worksheet' name='heat map daily change'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.056uhre03erh9x15icgnx0de28pv].[none:subsector:nk]' type='filter' />
+            <card param='[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]' type='filter' />
+            <card param='[federated.056uhre03erh9x15icgnx0de28pv].[tmn:date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.056uhre03erh9x15icgnx0de28pv].[usr:Calculation_2072641012995547137:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A8044927-DC61-4E3A-B840-F6CD380C8A55}' />
+    </window>
+    <window class='worksheet' name='Treemap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.056uhre03erh9x15icgnx0de28pv].[io:last two days:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.056uhre03erh9x15icgnx0de28pv].[pcdf:sum:close:qk:2]' type='color' />
+            <card param='[federated.056uhre03erh9x15icgnx0de28pv].[none:company:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C491F8E9-4EE4-4210-93B3-E6ED892A5C91}' />
+    </window>
+    <window class='worksheet' name='BG'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B2DF3176-350E-4F85-8110-D68487BDE916}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Treeboard'>
+      <viewpoints>
+        <viewpoint name='BG'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Treemap'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{EBCB643A-BFB7-4047-8C78-291817A2CDF5}' />
+    </window>
+    <window class='dashboard' name='Treeboard (2)'>
+      <viewpoints>
+        <viewpoint name='BG'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Treemap'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='12' />
+      <simple-id uuid='{6EC9FE90-0C90-4214-993A-0444BDE11B18}' />
+    </window>
+    <window class='worksheet' name='sunburst'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.056uhre03erh9x15icgnx0de28pv].[none:sector:nk]&#10;[federated.056uhre03erh9x15icgnx0de28pv].[none:subsector:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{86FA2C52-81BB-4B67-8E51-3374F0A2C2EF}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.11vn7gb1gkllei175dclg0xlwjqk].[tmn:date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.11vn7gb1gkllei175dclg0xlwjqk].[yr:date:ok]' type='filter' />
+            <card pane-specification-id='1' param='[federated.11vn7gb1gkllei175dclg0xlwjqk].[pcdf:sum:close:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1D374429-CDA5-4D64-897A-812015B5E7A0}' />
+    </window>
+  </windows>
+</workbook>
