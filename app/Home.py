@@ -23,7 +23,9 @@ st.set_page_config(
 
 ############### title ##############
 
-st.title("S&P 500")
+st.image("titlepage.png")
+
+
 st.header("This application provides general information and recent trends in the S&P 500.")
 st.subheader("Overview: Average Price Data of S&P500 normalized since 2010")
 

@@ -214,7 +214,6 @@ def run_xgb(df4, df4_training):
         Output: df with top 20 gainers
         """
 
-        yesterday = date.today() - timedelta(days=2)
         df_ga = df4.copy()
         df_ga.reset_index(inplace=True)
         df_ga["date"] = pd.to_datetime(df_ga["date"])
@@ -222,6 +221,12 @@ def run_xgb(df4, df4_training):
         df_ga.drop(columns=["sector", "subsector"], inplace=True)
         df_ga.set_index("date", inplace=True)    
         df_ga.sort_index(inplace=True)
+
+        yesterday = date.today() - timedelta(days=2)
+        if not yesterday in df_ga:
+            yesterday = date.today() - timedelta(days=3)
+            if not yesterday in df_ga:
+                yesterday = date.today() - timedelta(days=4)
 
         xg_df = df_ga.loc[str(yesterday)]
         xg_df.sort_index(inplace=True)

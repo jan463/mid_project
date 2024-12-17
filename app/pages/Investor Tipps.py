@@ -44,7 +44,6 @@ def get_data():
 
 
 
-
 ################ title ######################
 
 st.title("Investor Page")
@@ -105,7 +104,7 @@ company = st.selectbox("Select a Company: ", merged["company"].unique())
 
 ############ filter for date ###########
 
-zooms = ["6 Months", "1 Year", "3 Years"]
+zooms = ["6 Months", "1 Year", "5 Years"]
 selected_zoom = st.selectbox("Select the Timeframe: ", zooms, index=2)
 
 end_date = merged["date"].max()
@@ -113,8 +112,8 @@ if selected_zoom == "6 Months":
     start_date = end_date - timedelta(days=182)
 elif selected_zoom == "1 Year":
     start_date = end_date - timedelta(days=365)
-elif selected_zoom == "3 Years":
-    start_date = end_date - timedelta(days=3*365)
+elif selected_zoom == "5 Years":
+    start_date = end_date - timedelta(days=5*365)
 
 filtered_df = merged[(merged["company"] == company) & (merged["date"] >= start_date)]
 
@@ -124,11 +123,9 @@ fig = px.line(filtered_df, x='date', y=['bb_lower', 'ma_20', 'bb_upper', 'close'
               labels={'value': 'Values', 'date': 'Date'},
               title='Moving Averages for Sample Company')
 
-# Add horizontal lines using Plotly
-fig.add_hline(y=70, line_dash="dash", line_color="gray")
-fig.add_hline(y=30, line_dash="dash", line_color="gray")
 
-# Update layout to improve the aesthetics
+
+# titles
 fig.update_layout(
     xaxis_title='Date',
     yaxis_title='Values',
@@ -137,5 +134,5 @@ fig.update_layout(
     title_font=dict(size=16, family='Arial', color='black')
 )
 
-# Display the interactive plot in Streamlit
+# display
 st.plotly_chart(fig)
