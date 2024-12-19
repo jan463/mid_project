@@ -17,3 +17,5 @@ Investing in the S&P 500 index can be enhanced by predicting stock prices using 
 ## Streamlit App
 The Streamlit app serves as an interface providing access to recent financial news and data as well as the latest stock price predictions.
 
+## Presentation
+[Here](https://www.canva.com/design/DAGZe1qqJpk/DrAnxT1p5i3qVFqGN8VZ9g/edit) you can find a comprehensive Presentation about this project.
