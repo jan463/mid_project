@@ -227,6 +227,16 @@ def run_xgb(df4, df4_training):
             yesterday = date.today() - timedelta(days=3)
             if not yesterday in df_ga:
                 yesterday = date.today() - timedelta(days=4)
+                if not yesterday in df_ga:
+                    yesterday = date.today() - timedelta(days=5)
+                    if not yesterday in df_ga:
+                        yesterday = date.today() - timedelta(days=6)
+                        if not yesterday in df_ga:
+                            yesterday = date.today() - timedelta(days=7)
+                            if not yesterday in df_ga:
+                                yesterday = date.today() - timedelta(days=8)
+                                if not yesterday in df_ga:
+                                    yesterday = date.today() - timedelta(days=9)
 
         xg_df = df_ga.loc[str(yesterday)]
         xg_df.sort_index(inplace=True)
